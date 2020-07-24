@@ -50,4 +50,4 @@ ctest
 
 ## Further work
 
-There's (draft of test plan)[https://github.com/gattaca-lab/riscv_pm/blob/master/testplan.md]
+There's [draft of test plan](https://github.com/gattaca-lab/riscv_pm/blob/master/testplan.md)
