@@ -2,7 +2,7 @@ Any write access would be ignored if performed to the current xPMMASK, xPMBASE a
 
 1. Any write access would be ignored if performed to the current xPMMASK, xPMBASE and MMTE.  
 Cases:  
-    a. M-mode writes PM.Current=0 -> switch to U-mode -> U-mode tries to update registers (no side effects ubserved)  
+    a. M-mode writes PM.Current=0 -> switch to U-mode -> U-mode tries to update u(PMMASK,PMBASE,MMTE) registers (to ensure no side effects ubserved)  
 Optional Cases: S-Mode, H-Mode, M-Mode.  
 Question: Is this statement hold true for M-mode?  
 
