@@ -15,7 +15,7 @@ Question: Is this statement hold true for M-mode?
 3. Enable tagging for an arbitrary mode and read MMTE.  
 Cases:  
     a. M-mode writes PM.Enabled=1 and PM.Current=1, read the value back  
-    b. M-mode writes PM.Enabled=1 and PM.Current=0 -> switch to U-mode -> read the value  
+    b. M-mode writes PM.Enabled=1 and PM.Current=0 -> switch to U-mode -> read the value  (umode registers)
     c. M-mode writes U-PM.Enabled=1 and U-PM.Current=0 -> switch to U-mode -> read the value  
     d. M-mode writes U-PM.Enabled=1 and U-PM.Current=1 -> switch to U-mode -> read the value  
     e. M-mode writes U-PM.Enabled=0 and U-PM.Current=1 -> switch to U-mode -> read the value  
