@@ -31,8 +31,10 @@ Please report any issues with the required environment.
 To build project:
 
 ```
-./build.sh
+CPU_NUM=32 ./build.sh
 ```
+
+By default only 8 cpu cores are going to be used. To override this, set CPU_NUM variable.
 
 This will build riscv toolchain, qemu and tests from src/tests directory.
 The resulting artifacts shall be installed in `SRC_DIR/install`.
