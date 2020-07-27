@@ -13,4 +13,4 @@ QEMU_BUILD_DIR="${BUILD_DIR}/qemu"
 GCC_BUILD_DIR="${BUILD_DIR}/riscv-gnu-toolchain"
 TESTS_BUILD_DIR="${BUILD_DIR}/tests"
 
-CPU_NUM=32
+CPU_NUM=${CPU_NUM:-8}
