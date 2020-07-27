@@ -1,20 +1,21 @@
+#include "defines.S"
+#include "boot.S"
+
 .global main
 
 .text
 .balign 8
 main:
     /* set MPM.Enable=1 and MPM.Current=1 in mmte */
-    li a0, 0xc0
-    csrw 0x7c0, a0
+    li a0, ((1 << CSR_BIT_POS_MPM_ENABLE) | (1 << CSR_BIT_POS_MPM_CURRENT))
+    csrw CSR_MMTE, a0
     /* read mmte value back*/
-    csrr a1, 0x7c0
+    csrr a1, CSR_MMTE
     /* if values are different, fail*/
     bne a1, a0, exit_fail
 
 exit_success:
-    li a0, 0
-    csrw 0x8c3, a0
+    TEST_PASSED
 
 exit_fail:
-    li a0, 1
-    csrw 0x8c3, a0
+    TEST_FAILED
