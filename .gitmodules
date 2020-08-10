@@ -8,3 +8,6 @@
 [submodule "src/riscv-pk"]
 	path = src/riscv-pk
 	url = https://github.com/riscv/riscv-pk
+[submodule "src/linux"]
+	path = src/linux
+	url = https://github.com/gattaca-lab/linux
