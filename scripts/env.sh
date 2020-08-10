@@ -3,14 +3,21 @@
 SRC_DIR="${ROOT_DIR}/src"
 BUILD_DIR="${ROOT_DIR}/build"
 INSTALL_DIR="${ROOT_DIR}/install"
+RISCV_GCC_TARGET=riscv64-unknown-linux-gnu
 RISCV_ISA_TARGET=rv64gc
 
 QEMU_SRC_DIR="${SRC_DIR}/qemu"
 GCC_SRC_DIR="${SRC_DIR}/riscv-gnu-toolchain"
 TESTS_SRC_DIR="${SRC_DIR}/tests"
+BUILDROOT_SRC_DIR="${SRC_DIR}/buildroot"
+LINUX_SRC_DIR="${SRC_DIR}/linux"
+PK_SRC_DIR="${SRC_DIR}/riscv-pk"
 
 QEMU_BUILD_DIR="${BUILD_DIR}/qemu"
 GCC_BUILD_DIR="${BUILD_DIR}/riscv-gnu-toolchain"
 TESTS_BUILD_DIR="${BUILD_DIR}/tests"
+BUILDROOT_BUILD_DIR="${BUILDROOT_SRC_DIR}"
+LINUX_BUILD_DIR="${LINUX_SRC_DIR}"
+PK_BUILD_DIR="${BUILD_DIR}/risc-pk"
 
 CPU_NUM=${CPU_NUM:-8}
