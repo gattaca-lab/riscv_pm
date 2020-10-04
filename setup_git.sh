@@ -8,13 +8,13 @@ git submodule update --init --recursive
 
 # switch QEMU to proper branch
 cd ${QEMU_SRC_DIR}
-git checkout riscv_pm-devel
+git checkout riscv_pm_qemu_5.1
 git submodule update
 cd ${ROOT_DIR}
 
 # switch Linux to proper branch
 cd ${LINUX_SRC_DIR}
-git checkout riscv_pm
+git checkout riscv_pm_5.8
 cd ${ROOT_DIR}
 
 # switch Buildroot to proper branch

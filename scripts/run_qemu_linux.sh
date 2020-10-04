@@ -10,7 +10,7 @@ QEMU_BIN=${INSTALL_DIR}/bin/qemu-system-riscv64
 sudo ${QEMU_BIN} \
     -nographic \
     -machine virt \
-    -kernel ${PK_BUILD_DIR}/bbl \
+    -kernel ${LINUX_BUILD_DIR}/arch/riscv/boot/Image \
     -append "root=/dev/vda ro console=ttyS0" \
     -drive file=${BUILDROOT_BUILD_DIR}/output/images/rootfs.ext2,format=raw,id=hd0 \
     -device virtio-blk-device,drive=hd0 \
