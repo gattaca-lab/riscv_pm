@@ -1,7 +1,10 @@
 #!/bin/bash
 
 ROOT_DIR="$(pwd)"
-MAC=$(whoami | md5sum | sed 's/^\(..\)\(..\)\(..\)\(..\)\(..\).*$/02:\1:\2:\3:\4:\5/')
+STR1=$(whoami)
+STR2=$(date)
+DATA="$STR1$STR2"
+MAC=$($DATA | md5sum | sed 's/^\(..\)\(..\)\(..\)\(..\)\(..\).*$/02:\1:\2:\3:\4:\5/')
 
 source scripts/env.sh
 
