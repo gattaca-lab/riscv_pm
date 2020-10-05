@@ -19,5 +19,5 @@ cd ${ROOT_DIR}
 
 # switch Buildroot to proper branch
 cd ${BUILDROOT_SRC_DIR}
-git checkout 2020.05.x
+git checkout 2020.08.x
 cd ${ROOT_DIR}
